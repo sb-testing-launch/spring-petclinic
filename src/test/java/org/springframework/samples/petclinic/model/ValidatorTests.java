@@ -53,7 +53,7 @@ class ValidatorTests {
 
 		assertThat(constraintViolations).hasSize(1);
 		ConstraintViolation<Person> violation = constraintViolations.iterator().next();
-		assertThat(violation.getPropertyPath()).hasToString("firstName");
+		assertThat(violation.getPropertyPath()).hasToString("first1Name");
 		assertThat(violation.getMessage()).isEqualTo("must not be blank");
 	}
 
